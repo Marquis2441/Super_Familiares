@@ -2,7 +2,7 @@ from django.shortcuts import render
 from django.template import Template, context, loader
 from Family.models import SuperFamiliares
 
-def listar_family(request):
+def listar_Family(request):
     queryset = SuperFamiliares.objects.all()
     diccionario = {'Family': queryset}
     plantilla = loader.get_template('Family_list.html')
